@@ -1,0 +1,123 @@
+.iconNav{
+    font-size: 16px;
+}
+.Rpopup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000be;
+    color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+  }
+  .Rpopup_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .Rpopup:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  .Rpopup:target .Rpopup_content {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  .Rpopup_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+  }
+  .Rpopup_content {
+    position: relative;
+    width: 430px;
+    height: 440px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, -100%);
+  }
+  .Rpopup_header {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: #f1f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Rpop_header_content {
+    text-transform: uppercase;
+    color: #1a1a18;
+  }
+  .Rpopup_close {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    text-decoration: none;
+    color: #1a1a18;
+    font-size: 16px;
+  }
+  
+  .Rpopup_header {
+    width: 100%;
+    height: 90px;
+    background-color: #f1f2f2;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+  .Rsection_popup {
+    
+    align-items: center;
+    justify-content: center;
+  }
+  .Rinput_popup {
+  }
+  .Rinput_popup input {
+    width: 370px;
+    height: 50px;
+    margin: 15px 30px 0px 30px;
+    background: #f1f2f2;
+    border: 1px solid #99a2ad;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .button_two {
+    position: relative;
+    
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+    width: 211px;
+    height: 60px;
+    left: 30px;
+    top: 20px;
+    background: #8D86C9;
+    /* red */
+    color: #ffffff;
+    border: 2px solid #8D86C9;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .button_two:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #e31e25;
+  }
+  .centerbutton{
+    width: 60%;
+    margin: 0 auto;
+  }
